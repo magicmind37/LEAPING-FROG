@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Meme Frog Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+        
+
+    <!-- Meme Frog Game Content -->
+    <div id="coin-container">
+        <img src="images/frog.png" alt="Frog" class="frog" id="frog" role="button" tabindex="0">
+        <div id="scoreboard">
+            <div id="score">SCORE: 0</div>
+        </div>
+        <div id="level">Level: 1</div>
+        <div id="power">Power: 1000</div>
+
+        <div id="power-bar">
+            <div id="power-bar-fill"></div>
+        </div>
+    </div>
+
+    <!-- Nav Buttons -->
+    <div id="nav-bar">
+        <div class="nav-button" id="invite-button" role="button" tabindex="0">
+            <img src="images/invite-icon.png" alt="Invite">
+            Invite
+        </div>
+        <div class="nav-button" id="task-button" role="button" tabindex="0">
+            <img src="images/task-icon.png" alt="Tasks">
+            Tasks
+        </div>
+        <div class="nav-button" id="store-button" role="button" tabindex="0">
+            <img src="images/store-icon.png" alt="Store">
+            Store
+        </div>
+        <div class="nav-button" id="leaderboard-button" role="button" tabindex="0">
+            <img src="images/leaderboard-icon.png" alt="Leaderboard">
+            LeaderBD
+        </div>
+        <div class="nav-button">
+            <img src="images/puzzle-icon.png" alt="puzzle">
+            <a href="puzzle/index.html" class="puzzle-button">Puzzle
+            </a>
+        </div>
+    </div>
+
+    <!-- Invite Page -->
+    <div class="invite-page" id="invite-page">
+        <div class="invite-header">Invite Friends</div>
+        <img src="images/x-icon.png" width="50" height="50" alt="Close" id="close-invite-btn" />
+        <div id="referral-section">
+            <h3>Your Referral Link</h3>
+            <input type="text" id="referral-link" readonly>
+            <button id="copy-link">Copy Link</button>
+        </div>
+        <div class="nav-button" id="close-invite-button" role="button" tabindex="0">Close</div>
+    </div>
+
+    <!-- Tasks Page -->
+    <div class="task-page" id="task-page">
+        <div class="task-header">Tasks</div>
+        <img src="images/x-icon.png" width="50" height="50" alt="Close" id="close-task-btn">
+        <h2>Complete the Following Tasks:</h2>
+        <div class="task-grid">
+            <div class="task">
+                <h3>Follow on Twitter</h3>
+                <p>Follow us on Twitter and get 100 coins!</p>
+                <button class="complete-task" data-task="twitter-follow">Complete</button>
+            </div>
+            <div class="task">
+                <h3>Like and Retweet</h3>
+                <p>Like and retweet our latest tweet!</p>
+                <button class="complete-task" data-task="twitter-like-retweet">Complete</button>
+            </div>
+            <div class="task">
+                <h3>YouTube Subscription</h3>
+                <p>Subscribe to our YouTube channel for exclusive content!</p>
+                <button class="complete-task" data-task="youtube-subscribe">Complete</button>
+            </div>
+            <div class="task">
+                <h3>Follow on Facebook</h3>
+                <p>Follow us on Facebook for updates!</p>
+                <button class="complete-task" data-task="facebook-follow">Complete</button>
+            </div>
+        </div>
+        <div class="nav-button" id="close-task-button" role="button" tabindex="0">Close</div>
+    </div>
+
+    <!-- Store Page -->
+    <div class="store-page" id="store-page">
+        <div class="store-header">Frog Skins Store</div>
+        <div class="frog-skins-container">
+            <div class="frog-skin" data-skin="1" data-cost="10000">
+                <span>Frog Skin 1 (Speed: +10)</span>
+                <button class="buy-skin" data-skin-id="1">Buy (10000 coins)</button>
+            </div>
+            <div class="frog-skin" data-skin="2" data-cost="20000">
+                <span>Frog Skin 2 (Speed: +20)</span>
+                <button class="buy-skin" data-skin-id="2">Buy (20000 coins)</button>
+            </div>
+            <div class="frog-skin" data-skin="3" data-cost="30000">
+                <span>Frog Skin 3 (Speed: +30)</span>
+                <button class="buy-skin" data-skin-id="3">Buy (30000 coins)</button>
+            </div>
+            <div class="frog-skin" data-skin="4" data-cost="40000">
+                <span>Frog Skin 4 (Speed: +40)</span>
+                <button class="buy-skin" data-skin-id="4">Buy (40000 coins)</button>
+            </div>
+            <div class="frog-skin" data-skin="5" data-cost="50000">
+                <span>Frog Skin 5 (Speed: +50)</span>
+                <button class="buy-skin" data-skin-id="5">Buy (50000 coins)</button>
+            </div>
+        </div>
+        <div class="nav-button" id="close-store-button" role="button" tabindex="0">Close</div>
+    </div>
+
+    <!-- Leaderboard Page -->
+    <div id="leaderboard-page" class="leaderboard-page">
+        <div class="leaderboard-header">Leaderboard</div>
+        <img src="images/x-icon.png" width="50" height="50" alt="Close" id="close-leaderboard-btn">
+        <div id="leaderboard-list">
+            <h2>Top Scores:</h2>
+            <ul>
+                <li>User1: 1000</li>
+                <li>User2: 900</li>
+                <li>User3: 850</li>
+                <li>User4: 800</li>
+                <li>User5: 750</li>
+            </ul>
+        </div>
+        <div class="nav-button" id="close-leaderboard-button" role="button" tabindex="0">Close</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

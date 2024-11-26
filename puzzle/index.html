@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frog Master Puzzle</title>
+    <link rel="stylesheet" href="puzzle.css">
+    <script defer src="puzzle.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="../index.html">Back to Frog Game</a></li>
+        </ul>
+    </nav>
+
+    <!-- Puzzle Game Content -->
+    <h1>Frog Master Puzzle</h1>
+    <div id="board"></div>
+    <h2>XP: <span id="xp">0</span></h2>
+    <h3 id="countdown">Time Left: 150 seconds</h3>
+    <div id="pieces"></div>
+
+    <!-- Music and Reset Controls -->
+    <div id="controls">
+        <button id="play-music">Play Music</button>
+        <button id="pause-music">Pause Music</button>
+        <button id="reset-game">Reset Game</button>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="background-music" loop>
+        <source src="background.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="clapping-sound">
+        <source src="clapping.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
